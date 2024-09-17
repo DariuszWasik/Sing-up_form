@@ -53,18 +53,23 @@
 
 body {
     display: flex;
-}
+    max-width: 1600px;
+    margin-left: auto;  
+    margin-right: auto;
+  }
 
 .aside {
 
     background-image: url(sebin-thomas-OdBFUurPHjo-unsplash.jpg);
-    min-width: 40vh;
-    /* height: 100%; */
-    /* align-self: stretch; */
+    min-width: 70vh;
     height: 100vh;    
     flex-grow: 1;
     background-size: cover;
-
+    object-fit: fill;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 .main {
     flex-grow: 2;
@@ -74,6 +79,39 @@ body {
 
 }
 
-.header, .form, .footer {
+.header, .form, .footer, .middle {
     border: 1px black solid;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .odin {
+    display: flex;
+    border: 1px black solid;
+    align-items: center;
+    background-color: black;
+    opacity: 0.4;
+    justify-content:center ;
+    margin-bottom: 200px;
+
+}
+
+.odin_foto{
+  width: 10vh;
+}
+
+.odin_text{
+  color: aliceblue;
+  font-size: 2rem;
+  font-family: 'logo', sans-serif;
+}
+
+.middle {
+  background-color: white;
+}
+
+.header, .footer {
+  background-color: rgb(143, 169, 134);
 }
