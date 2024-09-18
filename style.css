@@ -61,10 +61,12 @@ body {
 .aside {
 
     background-image: url(sebin-thomas-OdBFUurPHjo-unsplash.jpg);
-    min-width: 70vh;
+
     height: 100vh;    
-    flex-grow: 1;
+    flex-basis: 640px;
+    /* flex-grow: 1; */
     background-size: cover;
+    resize: both;
     object-fit: fill;
     display: flex;
     flex-direction: column;
@@ -72,11 +74,11 @@ body {
     justify-content: center;
 }
 .main {
-    flex-grow: 2;
+    flex-basis: 960px;
     background-color: rgb(254, 228, 255);
     display: flex;
     flex-direction: column;
-
+    /* flex-grow: 2; */
 }
 
 .header, .form, .footer, .middle {
@@ -95,7 +97,8 @@ body {
     opacity: 0.4;
     justify-content:center ;
     margin-bottom: 200px;
-
+    padding: 10px;
+    gap: 10px;
 }
 
 .odin_foto{
@@ -104,7 +107,7 @@ body {
 
 .odin_text{
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 3em;
   font-family: 'logo', sans-serif;
 }
 
@@ -113,5 +116,25 @@ body {
 }
 
 .header, .footer {
-  background-color: rgb(143, 169, 134);
+  background-color: rgba(68, 255, 0, 0.193);
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.form * {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  gap: 25px;
 }
