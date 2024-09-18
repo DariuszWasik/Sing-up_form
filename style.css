@@ -74,20 +74,12 @@ body {
     justify-content: center;
 }
 .main {
-    flex-basis: 960px;
-    background-color: rgb(254, 228, 255);
     display: flex;
     flex-direction: column;
     /* flex-grow: 2; */
-}
-
-.header, .form, .footer, .middle {
-    border: 1px black solid;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-basis:960px;
   }
+  
   
   .odin {
     display: flex;
@@ -99,11 +91,11 @@ body {
     margin-bottom: 200px;
     padding: 10px;
     gap: 10px;
-}
-
-.odin_foto{
-  width: 10vh;
-}
+  }
+  
+  .odin_foto{
+    width: 10vh;
+  }
 
 .odin_text{
   color: aliceblue;
@@ -112,22 +104,46 @@ body {
 }
 
 .middle {
-  background-color: white;
+  background-color: rgba(21, 92, 12, 0.08);
+  min-height: min-content;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 4em;
+  /* display: flex; */
+  /* flex-direction: column; */
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.266);
+  
 }
 
-.header, .footer {
-  background-color: rgba(68, 255, 0, 0.193);
+.footer {
+  background-color: rgba(255, 255, 255, 0.706);
+  flex-grow: 1;
+  padding-left: 3rem;
+  padding-top: 2rem;
 }
 
-.form {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+button {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 10px 20px;
+  color: whitesmoke;
+  background-color: rgba(33, 70, 41, 0.445);
+  border-color: whitesmoke;
 }
+
+button:hover {
+  background-color: rgba(33, 70, 41, 0.618);
+  
+}
+
 
 label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 550;
+  font-stretch: 50%;
 }
 
 .form * {
@@ -135,6 +151,50 @@ label {
   flex-direction: column;
 }
 
-.form {
-  gap: 25px;
+.inputs>div {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 300px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  color:  rgba(33, 70, 41, 0.445);
+  text-decoration: none;
+}
+
+input {
+  border-radius: 5px;
+  margin-top: 0.35rem;
+  border: 1px silver solid;
+  padding: 2px 10px;
+}
+
+input:focus {
+  background-color: rgba(192, 192, 192, 0.337);
+}
+
+
+
+input:invalid {
+  border: 1px red solid;
 }
