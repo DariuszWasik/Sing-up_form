@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing-up</title>
+    <title>Sing-up ODIN ATTACKS</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <aside class="aside">
         <div class="odin">
-            <img class="odin_foto" src="odin-lined.png" alt="logo with wiking">
-            <p class="odin_text">ODIN ATTACK</p>
+            <img class="odin_foto" src="odin-lined.png" alt="logo with a viking">
+            <p class="odin_text">ODIN ATTACKS</p>
         </div>
     </aside>
     <main class="main">
         <div class="middle">
-            <p class="intro">This is not a real service! You know you need something like this in your life to help you realize your deepest dreams.
-                Sing-up now to get started.
+            <p class="intro">This is not a real service! You know you need something like this 
+                in your life to help you realize your deepest dreams.
+                Sing-up <em>now</em> to get started.
             </p>
-            <p class="intro2">You know you want to.</p>
+            <p class="intro2">You <em>know</em> you want to.</p>
             <header>
                 <h3>Let's do this!</h3>
             </header>
@@ -45,19 +46,19 @@
                         </div>
                         <div class="phone_number">
                             <label for="phone_number">PHONE NUMBER (+49)</label>
-                            <input type="text" name="phone_number" id="phone_number" pattern="[0][0-9]{11}|[0-9]{11}" placeholder="012345678910">
+                            <input type="text" name="phone_number" id="phone_number" pattern="[^0][0-9]{10}" placeholder="12345678910">
                             <p class="alert_phone_number alert"></p>
                         </div>
                     </div>
                     <div class="position_level">
                         <div class="password">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
                             <p class="alert_password alert"></p>
                         </div>
                         <div class="confirm_password">
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm_password" id="confirm_password">
+                            <input type="password" name="confirm_password" id="confirm_password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
                             <p class="alert_confirm_password alert"></p>
                         </div>
                     </div>
